@@ -28,7 +28,7 @@
     vm_template_spec:
       domain:
         cpu:
-          cores: "{{ params.cpu_cores }}"
+          cores: "{{ params.cpu_cores | int }}"
         memory:
           guest: "{{ params.memory }}"
         devices:
